@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "name": "Righteous Arithmetic",
+      "status": "Completed",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "USA",
+      "postal_code": "30318",
+      "starred": false,
+      "created_at": "2020-01-06 12:22:10",
+      "comment": null
+    },
+    {
+      "id": 2,
+      "name": "Cold Game",
+      "status": "In Progress",
+      "city": "Atlanta",
+      "state": "GA",
+      "country": "USA",
+      "postal_code": "30339",
+      "starred": false,
+      "created_at": "2020-02-03 13:11:10",
+      "comment": "UGxlYXNlIGFkZCBhIGNvbW1lbnQgdG8geW91ciBjb2RlIGNvbnRhaW5pbmcgdGhlIHdvcmQgIm92ZW4i"
+    },
+    {
+      "id": 4,
+      "name": "Frequent Tank",
+      "status": "Upcoming",
+      "city": "Dunwoody",
+      "state": "GA",
+      "country": "USA",
+      "postal_code": "30360",
+      "starred": true,
+      "created_at": "2020-05-06 09:00:00",
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "name": "Superficial Jellyfish",
+      "status": "In Progress",
+      "city": "Seneca",
+      "state": "SC",
+      "country": "USA",
+      "postal_code": "29678",
+      "starred": false,
+      "created_at": "2021-08-11 11:50:09",
+      "comment": "Making a note here"
+    },
+    {
+      "id": 13,
+      "name": "Superficial Jellyfish",
+      "status": "In Progress",
+      "city": "Seneca",
+      "state": "SC",
+      "country": "USA",
+      "postal_code": "29678",
+      "starred": false,
+      "created_at": "2021-09-12 17:40:22",
+      "comment": null
+    },
+    {
+      "id": 14,
+      "name": "Imaginative Hill",
+      "status": "Upcoming",
+      "city": "Thurmont",
+      "state": "MD",
+      "country": "USA",
+      "postal_code": "21788",
+      "starred": true,
+      "created_at": "2021-09-12 17:40:26",
+      "comment": "Could be tricky to construct during winter."
+    },
+    {
+      "id": 18,
+      "name": "Winter Mountain",
+      "status": "Upcoming",
+      "city": "Emmitsburg",
+      "state": "MD",
+      "country": "USA",
+      "postal_code": "21727",
+      "starred": false,
+      "created_at": "2021-10-30 19:31:22",
+      "comment": null
+    },
+    {
+      "id": 20,
+      "name": "Light Bay",
+      "status": "Upcoming",
+      "city": "Corner Brook",
+      "state": "NL",
+      "country": "CAN",
+      "postal_code": "A0L 1J0",
+      "starred": true,
+      "created_at": "2021-11-14 06:22:04",
+      "comment": null
+    }
+  ]
+}

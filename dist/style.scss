@@ -1,0 +1,180 @@
+html {
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+body {
+  font-size: 16px;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  color: #fff;
+  padding: 20px 40px;
+  margin: 100px auto;
+  max-width: 1400px;
+  box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.13);
+  -webkit-box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.13);
+  font-family: "Roboto Condensed";
+  border-radius: 8px;
+}
+
+h1 {
+  border-bottom: 5px solid white;
+  border-radius: 10px;
+  width: fit-content;
+  padding-bottom: 10px;
+  margin: 0 auto;
+}
+
+.logList {
+  opacity: 0;
+  transition: opacity 1.6s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+
+  .logItem {
+    width: 265px;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.13);
+    -webkit-box-shadow: 0px 10px 15px 15px rgba(39, 0, 0, 0.5);
+    -moz-box-shadow: 0px 10px 15px 15px rgba(0, 0, 0, 0.13);
+    font-family: "Roboto", sans-serif;
+    background: rgba(47, 49, 80, 0.6);
+    margin: 25px 0;
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 0px 5px 20px 20px rgba(39, 0, 0, 0.5);
+    }
+    .itemHeader {
+      position: relative;
+      height: 35px;
+      img {
+        float: left;
+      }
+      .status {
+        float: right;
+        font-size: 12px;
+      }
+      .icon {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        display: inline-block;
+        box-shadow: 2px -1px 9px 1px rgb(110, 111, 128);
+        -webkit-box-shadow: 2px -1px 9px 1px rgb(110, 111, 128);
+        -moz-box-shadow: 2px -1px 9px 1px rgb(110, 111, 128);
+        &.--Completed {
+          background: radial-gradient(circle at 5px 4px, lightgreen, #333);
+        }
+        &.--Upcoming {
+          background: radial-gradient(circle at 5px 4px, violet, #333);
+        }
+        &.--In.Progress {
+          background: radial-gradient(circle at 5px 4px, yellow, #333);
+        }
+        &.--Cacelled {
+          background: radial-gradient(circle at 5px 4px, red, #333);
+        }
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 30px;
+        width: 100px;
+        left: 75px;
+        height: 10px;
+        border-radius: 15px 0 15px 0;
+        background: linear-gradient(
+          130deg,
+          #005da4,
+          #015ea5 41.07%,
+          #01b1f0 76.05%
+        );
+      }
+    }
+
+    &.--Completed .itemHeader:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 100px;
+      left: 75px;
+      height: 10px;
+      border-radius: 15px 0 15px 0;
+      background: linear-gradient(
+        130deg,
+        #01b1f0,
+        lightgreen 41.07%,
+        green 76.05%
+      );
+    }
+    &.--In.Progress .itemHeader:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 100px;
+      left: 75px;
+      height: 10px;
+      border-radius: 15px 0 15px 0;
+      background: linear-gradient(
+        130deg,
+        #01b1f0,
+        lightgray 41.07%,
+        yellow 76.05%
+      );
+    }
+    &.--Upcoming .itemHeader:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 100px;
+      left: 75px;
+      height: 10px;
+      border-radius: 15px 0 15px 0;
+      background: linear-gradient(
+        130deg,
+        #01b1f0,
+        lightgray 41.07%,
+        violet 76.05%
+      );
+    }
+    &.--Cancelled .itemHeader:after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      width: 100px;
+      left: 75px;
+      height: 10px;
+      border-radius: 15px 0 15px 0;
+      background: linear-gradient(130deg, lightgray, gray 41.07%, red 76.05%);
+    }
+    .itemBody {
+      clear: both;
+
+      h2 {
+        margin: 50px 0;
+        text-shadow: -3px 5px #363333;
+      }
+
+      p {
+        word-break: break-word;
+        height: 75px;
+      }
+    }
+
+    .itemFoot {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      text-align: right;
+      margin-top: 60px;
+    }
+    time {
+      font-size: 12px;
+    }
+  }
+}
